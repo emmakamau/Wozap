@@ -13,6 +13,8 @@ body{
 /* Navbar styling */
 .navbar{
     background-color: #06113C;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
 .navbar-nav{
@@ -39,6 +41,10 @@ body{
     background-color: #FF8C32;
 }
 
+.main-page{
+    padding: 1vh;
+}
+
 /* Tech articles section */
 .main-heading{
     font-family: 'Playfair Display', serif;
@@ -46,21 +52,32 @@ body{
 }
 
 .display-tech-articles{
-    padding: 2vh 4vh;
-    background-color: #DDDDDD;
+    margin-top: 1vh;
+    color: #EEEEEE !important;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech-article-div{
+    padding: 2vh;
+}
+
+.other-tech-articles{
+    float: right;
 }
 
 .tech-article-title{
     text-decoration: none;
-    color: #06113C;
+    color: #EEEEEE !important;
 }
 
 .tech-article-title:hover{
-    color: #06113C;
+    color: #EEEEEE !important;
 }
 
 .tech-article{
-    color: #06113C;
+    color: #EEEEEE !important;
 }
 
 .tech-article:hover{
@@ -71,6 +88,7 @@ body{
 .card{
     height: 30rem;
     width: auto;
+    margin-top: 4vh;
 }
 
 .card-img-top{
@@ -85,4 +103,34 @@ body{
 
 .main-section-one{
     padding: 2vh 0;
+}
+
+.main-section-two-title{
+    font-weight: 800;
+}
+
+.main-section-two-card-body{
+    padding: 0 1vh;
+    background-color: white;
+    height: 50%;
+}
+
+/* Footer styling */
+.footer{
+    background-color: #06113C;
+    color: #EEEEEE;
+    padding: 3vh;
+    line-height: 1vh;
+}
+
+.footer-header{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    color: #FF8C32;
+    font-size: 8vh;
+}
+
+.social-icons{
+    height: 30%;
+    padding: 2vh;
 }
