@@ -7,6 +7,7 @@ body{
     font-family: 'Inconsolata', monospace;
     overflow-x: hidden;
     font-weight: 400;
+    color: #06113C;
 }
 
 /* Navbar styling */
@@ -47,4 +48,41 @@ body{
 .display-tech-articles{
     padding: 2vh 4vh;
     background-color: #DDDDDD;
+}
+
+.tech-article-title{
+    text-decoration: none;
+    color: #06113C;
+}
+
+.tech-article-title:hover{
+    color: #06113C;
+}
+
+.tech-article{
+    color: #06113C;
+}
+
+.tech-article:hover{
+    font-size: 110%;
+}
+
+/* Styling for the main section */
+.card{
+    height: 30rem;
+    width: auto;
+}
+
+.card-img-top{
+    height: 50%;
+    width: 100%;
+}
+
+.main-section-two{
+    background-color: #EEEEEE;
+    padding: 2vh;
+}
+
+.main-section-one{
+    padding: 2vh 0;
 }

@@ -7,11 +7,41 @@
     <div class="row">
         <div class="col-md-6">
             <h1 class="main-heading">Tech News</h1>
-            <h2 class="tech-article-title">{{tech_articles[1].title}}</h2>
+            <h2>
+                <a href="{{tech_articles[1].url}}" class="tech-article-title">
+                    {{tech_articles[1].title}}
+                </a>
+            </h2>
             <p class="tech-article-desc">{{tech_articles[1].description|truncate(200)}}</p>
         </div>
         <div class="col-md-6">
-            {{ macro.displayArticlesList(tech_articles) }}
+            {% for article in tech_articles[5:10] %}
+            <p><a href="{{article.url}}" class="tech-article">{{article.title}}</a></p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="main-section">
+    <div class="row">
+        <div class="col-md-3 main-section-one">
+            <h4 class="main-heading text-center">News Sources Available</h4>
+        </div>
+        <div class="col-md-9 main-section-two">
+            <h4 class="main-heading text-center">What's New?</h4>
+            <div class="row">
+                {% for article in all_articles[:9] %}
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{article.urlToImage}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">{{article.title}}</h5>
+                            <p class="card-text">{{article.description|truncate(50)}}</p>
+                            <a href="{{article.url}}" class="">click to read article</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
