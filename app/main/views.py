@@ -11,4 +11,6 @@ from ..models import *
 #Views
 @main.route('/')
 def home():
-    return render_template('index.html')
+    tech_articles = get_article('technology')
+
+    return render_template('index.html',tech_articles=tech_articles)

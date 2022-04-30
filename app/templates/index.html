@@ -1,4 +1,14 @@
 {% extends 'base.html' %}
+{% import 'macros.html' as macro %}
 
 {% block content %}
+
+<div class="display-tech-articles">
+    <div class="row">
+        <div class="col-md-6">{{macro.displayArticlesList(tech_articles)}}</div>
+        <div class="col-md-6"></div>
+    </div>
+</div>
+
+
 {% endblock %}

@@ -1,0 +1,9 @@
+{% macro displayArticlesList(articles_list) %}
+
+{% for article in articles_list %}
+
+    <p>{{article.title}}</p>
+
+{% end for %}
+
+{% end macro %}
