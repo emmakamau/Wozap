@@ -5,8 +5,14 @@
 
 <div class="display-tech-articles">
     <div class="row">
-        <div class="col-md-6">{{macro.displayArticlesList(tech_articles)}}</div>
-        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <h1 class="main-heading">Tech News</h1>
+            <h2 class="tech-article-title">{{tech_articles[1].title}}</h2>
+            <p class="tech-article-desc">{{tech_articles[1].description|truncate(200)}}</p>
+        </div>
+        <div class="col-md-6">
+            {{ macro.displayArticlesList(tech_articles) }}
+        </div>
     </div>
 </div>
 

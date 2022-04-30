@@ -19,6 +19,7 @@ def configure_request(app):
 
 def get_article(category):
     get_articles_url = base_url.format(category,api_key)
+    print(get_articles_url)
     with urllib.request.urlopen(get_articles_url) as url:
         get_articles_data = url.read()
         get_articles_response = json.loads(get_articles_data)
@@ -32,17 +33,18 @@ def get_article(category):
     return articles_results
 
 def process_results(articles_list):
-    articles_list = []
+    articles_results = []
     for article in articles_list:
+        # author,title,description,url,urlToImage,publishedAt,content
         author = article.get('author')
         title = article.get('title')
         description = article.get('description')
         url = article.get('url')
         urlToImage = article.get('urlToImage')
-        publishedAt = article.get('publishedAt')
+        publishedAt = article.get('publisheAt')
         content = article.get('content')
-
+        
         article_object = Article(author,title,description,url,urlToImage,publishedAt,content)
-        articles_list.append(article_object)
+        articles_results.append(article_object)
 
-    return articles_list
+    return articles_results

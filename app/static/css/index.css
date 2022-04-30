@@ -4,8 +4,9 @@
 */
 
 body{
-    padding: 0 0.1vh;
     font-family: 'Inconsolata', monospace;
+    overflow-x: hidden;
+    font-weight: 400;
 }
 
 /* Navbar styling */
@@ -35,4 +36,15 @@ body{
 
 .navbar-toggle{
     background-color: #FF8C32;
+}
+
+/* Tech articles section */
+.main-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.display-tech-articles{
+    padding: 2vh 4vh;
+    background-color: #DDDDDD;
 }

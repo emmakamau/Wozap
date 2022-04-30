@@ -2,14 +2,9 @@
 Define and initialize classes for our objects
 '''
 
-class Source:
-    def __init__(self,id,name):
-        self.id = id
-        self.name = name
-    pass
-
 class Article:
-    def __init__(self,author,title,description,url,urlToImage,publishedAt,content) -> None:
+    articles_list = []
+    def __init__(self,author,title,description,url,urlToImage,publishedAt,content):
         self.author = author
         self.title = title
         self.description = description
@@ -17,4 +12,10 @@ class Article:
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
         self.content = content
-        pass
+    pass
+
+class Source:
+    def __init__(self,id,name):
+        self.id = id
+        self.name = name
+    pass
