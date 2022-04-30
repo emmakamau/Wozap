@@ -2,3 +2,37 @@
     font-family: 'Inconsolata', monospace; 
     font-family: 'Playfair Display', serif; Main headings
 */
+
+body{
+    padding: 0 0.1vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Navbar styling */
+.navbar{
+    background-color: #06113C;
+}
+
+.navbar-nav{
+    float: right;
+}
+
+.link-nav-main{
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.link-nav-main:hover{
+    color: #FF8C32;
+}
+
+.link-nav{
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-toggle{
+    background-color: #FF8C32;
+}
