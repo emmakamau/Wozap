@@ -32,3 +32,15 @@ def business():
     business_news = get_article_top_headlines('business')
 
     return render_template('business.html',business_news=business_news)
+
+@main.route('/sports')
+def sports():
+    sports_news = get_article_top_headlines('sports')
+
+    return render_template('sports.html',sports_news=sports_news)
+
+@main.route('/health')
+def health():
+    health_news = get_article_top_headlines('health')
+
+    return render_template('health.html',health_news=health_news)

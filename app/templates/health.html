@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+<div class="page-articles-display">
+    <h2 class="article-main-headings text-center">Let's talk about HEALTH..</h2>
+    <div class="page-articles">
+        <div class="row">
+            <div class="col-md-7 main-articles">
+                {{ macro.displayArticlesList(health_news) }}
+            </div>
+            <div class="col-md-5 sub-articles">
+                {{ macro.displayArticlesListTwo(health_news) }}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}
