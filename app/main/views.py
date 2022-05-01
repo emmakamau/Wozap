@@ -21,3 +21,9 @@ def kenya():
     kenya_articles = get_article_everything('kenya')
 
     return render_template('kenya.html',kenya_articles=kenya_articles)
+
+@main.route('/worldnews')
+def worldnews():
+    worldnews = get_article_everything('world')
+    
+    return render_template('worldnews.html',worldnews=worldnews)
