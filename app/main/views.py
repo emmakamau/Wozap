@@ -1,7 +1,6 @@
 '''
 We define views that will be rendered on our pages
 '''
-
 from flask import render_template,request,redirect,url_for
 from . import main
 from ..request import *
@@ -25,5 +24,11 @@ def kenya():
 @main.route('/worldnews')
 def worldnews():
     worldnews = get_article_everything('world')
-    
+
     return render_template('worldnews.html',worldnews=worldnews)
+
+@main.route('/business')
+def business():
+    business_news = get_article_top_headlines('business')
+
+    return render_template('business.html',business_news=business_news)
