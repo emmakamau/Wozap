@@ -25,11 +25,11 @@ body{
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: bolder;
-    color: white;
+    color: #FF8C32;
 }
 
 .link-nav-main:hover{
-    color: #FF8C32;
+    color: #EEEEEE;
 }
 
 .link-nav{
@@ -88,7 +88,7 @@ body{
 .card{
     height: 30rem;
     width: auto;
-    margin-top: 4vh;
+    margin-top: 2vh;
 }
 
 .card-img-top{
@@ -133,4 +133,45 @@ body{
 .social-icons{
     height: 30%;
     padding: 2vh;
+}
+
+/* Pages styling */
+.article-page-img{
+    height: 12rem;
+    width: 20rem;
+}
+
+.article-card{
+    height: auto;
+}
+
+.page-articles-display{
+    padding: 0 2vh;
+}
+
+.main-articles{
+    background-color: #EEEEEE;
+    border-right: #06113C solid 2px;
+}
+
+.page-article-text{
+    font-weight: bold;
+    font-size: smaller;
+}
+
+.page-article-title{
+    text-decoration: none;
+    color: #06113C;
+}
+
+.page-article-title:hover{
+    font-size: large;
+}
+
+.article-card-title{
+    font-weight: bold;
+}
+
+.article-main-headings{
+    font-family: 'Playfair Display', serif;
 }

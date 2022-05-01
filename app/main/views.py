@@ -15,3 +15,9 @@ def home():
     all_articles = get_article_everything('all')
 
     return render_template('index.html',tech_articles=tech_articles,all_articles=all_articles)
+
+@main.route('/kenya')
+def kenya():
+    kenya_articles = get_article_everything('kenya')
+
+    return render_template('kenya.html',kenya_articles=kenya_articles)
