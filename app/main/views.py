@@ -46,6 +46,12 @@ def health():
 
     return render_template('health.html',health_news=health_news)
 
+@main.route('/tech')
+def tech():
+    tech_news = get_article_top_headlines('technology')
+
+    return render_template('tech.html',tech_news=tech_news)
+
 @main.route('/sources')
 def sources():
     all_sources = get_sources()
