@@ -15,7 +15,7 @@ Emmaculate Kamau
 An IDE such as VS code with Python version 3 installed,a terminal and a browser. 
 
 ## Setup and Instruction
-1. Clone the repository at [here](https://github.com/emmakamau/Wozap.git.
+1. Clone the repository at [here](https://github.com/emmakamau/Wozap.git).
 2. Extract and open the folder on VS code or navigate to the folder on your terminal.
 3. On the terminal, create a virtual environment `python3 -m venv virtual` and activate it `source virtual/bin/activate`. NB **virtual** is the name of the environment.
 4. Pip install dependancies highlighted on the **requirements.txt** by running `pip install -r requirements.txt`
@@ -30,11 +30,12 @@ BDD focuses on how the user will interact with the application.
 
 What you will see and experience:
 1. A landing page with a navbar, a Tech section, list of resources, What's new and a footer.
-2. The navbar contains link with various types of news. Click on the **Kenya** link and get redirected to view Kenyan news articles.
-3. The search form on the navbar allows the user to search for any article desired. Type in for example, **shoes** and submit. You'll get redirected to a search page with the number of articles related to shoes. 
+2. The navbar contains links with various types of news articles. Click on the **Kenya** link and get redirected to view Kenyan news articles.
+3. The search form on the navbar allows the user to search for any article desired. Type in for example, **shoes** and submit. You will get redirected to a search page with the number of articles found related to shoes, article title, description and a link to the main article. 
 4. On the **News Sources Available**, click to be redirected to the sources main websites.
-5. The news articles are displayed on cards, click on **read article** or **view more** to get redirected to the main article or video on the source website.
-6. On the footer, click on the social icons to interact with the owners of the website.
+5. The news articles are displayed on cards, with a title and a brief description. Click on **read article** or **view more** to get redirected to the main article or video on the source website.
+6. On the particular pages such as Kenya, a section of other articles are displayed, click on the titles to get redirected to the main articles. 
+7. On the footer, click on the social icons to interact with the owners of the website.
 
 ## Development
 To fix a bug or enhance an existing module, follow these steps:
