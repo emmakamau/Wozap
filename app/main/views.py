@@ -12,8 +12,9 @@ from ..models import *
 def home():
     tech_articles = get_article_top_headlines('technology')
     all_articles = get_article_everything('all')
+    all_sources = get_sources()
 
-    return render_template('index.html',tech_articles=tech_articles,all_articles=all_articles)
+    return render_template('index.html',tech_articles=tech_articles,all_articles=all_articles,all_sources=all_sources)
 
 @main.route('/kenya')
 def kenya():
@@ -44,3 +45,9 @@ def health():
     health_news = get_article_top_headlines('health')
 
     return render_template('health.html',health_news=health_news)
+
+@main.route('/sources')
+def sources():
+    all_sources = get_sources()
+
+    return render_template('sources.html',all_sources=all_sources)

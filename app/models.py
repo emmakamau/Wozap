@@ -15,7 +15,9 @@ class Article:
     pass
 
 class Source:
-    def __init__(self,id,name):
+    sources_list = []
+    def __init__(self,id,name,url):
         self.id = id
         self.name = name
+        self.url = url
     pass

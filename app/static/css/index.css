@@ -10,6 +10,10 @@ body{
     color: #06113C;
 }
 
+ul,li{
+    list-style: none;
+}
+
 /* Navbar styling */
 .navbar{
     background-color: #06113C;
@@ -113,6 +117,29 @@ body{
     padding: 0 1vh;
     background-color: white;
     height: 50%;
+}
+
+/* Sources styling */
+.source-title{
+    font-weight: 700;
+    font-size: large;
+    color: #06113C;
+    text-decoration: none;
+    padding-right: 5vh;
+}
+
+.source-heading{
+    color: #FF8C32;
+    font-weight: bolder;
+}
+
+.more-sources{
+    color: #FF8C32;
+    font-weight: bolder;
+}
+
+.sources-display-all{
+    padding: 1vh 6vh;
 }
 
 /* Footer styling */

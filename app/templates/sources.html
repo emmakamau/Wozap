@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content %}
+    <div class="sources-display-all">
+        <h1 class="main-heading text-center">All News Sources</h1>
+        <div class="row">
+            {% for source in all_sources%}
+            <div class="col-md-3">
+                <a href="{{source.url}}">{{source.name}}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

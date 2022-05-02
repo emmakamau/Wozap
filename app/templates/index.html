@@ -26,7 +26,14 @@
     <div class="main-section">
         <div class="row">
             <div class="col-md-3 main-section-one">
-                <h4 class="main-heading text-center">News Sources Available</h4>
+                <h4 class="main-heading source-heading text-center">News Sources Available</h4>
+                <ul>
+                    {% for source in all_sources[0:30] %}
+                    <li><a href="{{source.url}}" class="source-title">{{source.name}}</a></li>
+                    {% endfor %}
+                    <br>
+                    <div><p><a href="/sources" class="more-sources">Click to view more sources</p></a></div>
+                </ul>
             </div>
             <div class="col-md-9 main-section-two">
                 <h4 class="main-heading text-center">What's New?</h4>
