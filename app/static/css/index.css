@@ -127,7 +127,7 @@ ul,li{
 
 /* Styling for the main section */
 .card{
-    height: 30rem;
+    height: 35rem;
     width: auto;
     background-color: white;
     margin-top: 2vh;
@@ -140,6 +140,7 @@ ul,li{
 
 .main-section{
     padding: 0 2vh;
+    background-color: #06113C;
 }
 
 .main-section-two{
@@ -169,7 +170,7 @@ ul,li{
 .source-title{
     font-weight: 500;
     font-size: large;
-    color: #06113C;
+    color:#EEEEEE;
     text-decoration: none;
     padding-right: 5vh;
 }
@@ -249,3 +250,29 @@ ul,li{
 .article-main-headings{
     font-family: 'Playfair Display', serif;
 }
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .article-page-img{
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .article-page-img{
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

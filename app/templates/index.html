@@ -15,7 +15,7 @@
                 </h2>
                 <p class="tech-article-desc">{{tech_articles[1].description|truncate(200)}}</p>
             </div>
-            <div class="col-md-4 other-tech-articles">
+            <div class="col-md-6 other-tech-articles">
                 {% for article in tech_articles[5:10] %}
                 <p><a href="{{article.url}}" class="tech-article">{{article.title}}</a></p>
                 {% endfor %}
@@ -38,7 +38,7 @@
                 <h4 class="main-heading text-center">What's New?</h4>
                 <div class="row main-section-two-row">
                     {% for article in all_articles[:9] %}
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-lg-4 col-xl-3 col-sm-6">
                         <div class="card">
                             <img class="card-img-top" src="{{article.urlToImage}}" alt="Card image cap">
                             <div class="card-body main-section-two-card-body">
