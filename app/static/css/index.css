@@ -175,6 +175,12 @@ ul,li{
     padding-right: 5vh;
 }
 
+.source-title:hover{
+    font-weight: 500;
+    font-size: larger;
+    color:#FF8C32;
+}
+
 .source-heading{
     color: #FF8C32;
     font-weight: bolder;
@@ -187,6 +193,7 @@ ul,li{
 
 .sources-display-all{
     padding: 1vh 6vh;
+    background-color: #06113C;
 }
 
 .display-source-articles{
