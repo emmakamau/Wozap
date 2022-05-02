@@ -49,10 +49,47 @@ ul,li{
     padding: 1vh;
 }
 
+/* Search form styling */
+
+.search-btn{
+    background-color: #06113C;
+    color: #FF8C32;
+    font-weight: 600;
+}
+
+.search-btn:hover{
+    background-color:#FF8C32;
+    color:#06113C;
+    font-weight: 600;
+}
+
+.search-form{
+    padding-top: 1vh;
+}
+
+.title-heading-search{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.main-heading-search{
+    font-weight: 400;
+}
+
+.searched-results{
+    padding:1vh 4vh;
+}
+
 /* Tech articles section */
 .main-heading{
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
+}
+
+#main-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    color: #EEEEEE;
 }
 
 .display-tech-articles{
@@ -92,6 +129,7 @@ ul,li{
 .card{
     height: 30rem;
     width: auto;
+    background-color: white;
     margin-top: 2vh;
 }
 
@@ -100,13 +138,13 @@ ul,li{
     width: 100%;
 }
 
+.main-section{
+    padding: 0 2vh;
+}
+
 .main-section-two{
     background-color: #EEEEEE;
     padding: 2vh;
-}
-
-.main-section-one{
-    padding: 2vh 0;
 }
 
 .main-section-two-title{
@@ -114,14 +152,22 @@ ul,li{
 }
 
 .main-section-two-card-body{
-    padding: 0 1vh;
-    background-color: white;
-    height: 50%;
+    padding: 1vh;
+    height:50%;
+}
+
+.read-article{
+    font-weight: 700;
+    color: #06113C;
 }
 
 /* Sources styling */
+.main-section-one{
+    padding: 2vh;
+}
+
 .source-title{
-    font-weight: 700;
+    font-weight: 500;
     font-size: large;
     color: #06113C;
     text-decoration: none;
@@ -158,7 +204,8 @@ ul,li{
 }
 
 .social-icons{
-    height: 30%;
+    height:10vh;
+    width: 5vw;
     padding: 2vh;
 }
 
