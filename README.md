@@ -32,7 +32,7 @@ What you will see and experience:
 1. A landing page with a navbar, a Tech section, list of resources, What's new and a footer.
 2. The navbar contains links with various types of news articles. Click on the **Kenya** link and get redirected to view Kenyan news articles.
 3. The search form on the navbar allows the user to search for any article desired. Type in for example, **shoes** and submit. You will get redirected to a search page with the number of articles found related to shoes, article title, description and a link to the main article. 
-4. On the **News Sources Available**, click to be redirected to the sources main websites.
+4. On the **News Sources Available**, click to view articles from that particular source.
 5. The news articles are displayed on cards, with a title and a brief description. Click on **read article** or **view more** to get redirected to the main article or video on the source website.
 6. On the particular pages such as Kenya, a section of other articles are displayed, click on the titles to get redirected to the main articles. 
 7. On the footer, click on the social icons to interact with the owners of the website.
