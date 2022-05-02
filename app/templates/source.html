@@ -2,11 +2,11 @@
 {% import 'macros.html' as macro %}
 
 {% block content %}
-<div class="searched-results">
-    <h3 class="main-heading-search text-center">Found {{searched_articles|count}} matches for <span
-            class="title-heading-search">{{heading}} </span>articles.</h3>
+<div class="display-source-articles">
+    <h3 class="main-heading-search text-center">Found {{article_display|count}} articles at <span
+        class="title-heading-search">{{title}}</span></h3>
     <div class="row">
-        {% for article in searched_articles[0:15] %}
+        {% for article in article_display %}
         <div class="col-md-4 col-xl-3 col-sm-6">
             <div class="card">
                 <img class="card-img-top" src="{{article.urlToImage}}" alt="Card image cap">
@@ -20,5 +20,4 @@
         {% endfor %}
     </div>
 </div>
-{% include 'footer.html' %}
 {% endblock %}

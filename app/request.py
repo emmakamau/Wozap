@@ -2,6 +2,7 @@
 Where we request data from the API e.g
 '''
 
+from concurrent.futures import process
 import urllib.request,json
 from .models import *
 
@@ -45,6 +46,18 @@ def get_article_everything(query):
 
     return articles_results
 
+def get_article_by_source(source_name):
+    get_source_article_url = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'.format(source_name,api_key)
+    print(get_source_article_url)
+    with urllib.request.urlopen(get_source_article_url) as url:
+        get_data = url.read()
+        get_response = json.loads(get_data)
+
+        results = None
+        if get_response['articles']:
+            results_list = get_response['articles']
+            results = process_results(results_list)
+    return results
 
 def process_results(articles_list):
     articles_results = []
